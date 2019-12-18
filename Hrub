@@ -1,0 +1,20 @@
+import datetime
+start = datetime.datetime.now()
+
+def nksucet (K, N, cifra, polotovar):
+	if K == 1:
+		if N <=9:
+			print(polotovar + str(N), end = " ")
+	else:
+		if N == cifsucet:
+				for i in range (1, min(cifsucet,9)+1):
+					nksucet (K-1, N-i, i, polotovar + str(i))
+		else:
+			for i in range (0, min(N,9)+1):
+				nksucet (K-1, N-i, i, polotovar + str(i))
+K = int(input())
+cifsucet = int(input())
+nksucet(K, cifsucet, 0, "")
+
+finish=datetime.datetime.now()
+print(finish-start)
